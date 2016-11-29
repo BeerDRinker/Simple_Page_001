@@ -15,13 +15,13 @@ $(window).scroll(function () {
     if (scroll > 98) {
 
         sticky.addClass('navbar-fixed-top');
-        navbar.css('background', '#000');
+        navbar.css('background', '#501414');
         top.addClass('hero-fixed-padding');
 
     } else {
 
         sticky.removeClass('navbar-fixed-top');
-        navbar.css('background', 'rgba(0, 0, 0, 0.5)');
+        navbar.css('background', '#000');
         top.removeClass('hero-fixed-padding');
 
     }
