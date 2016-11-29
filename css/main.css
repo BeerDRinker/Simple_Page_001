@@ -149,18 +149,28 @@ h6 {
 }
 
 p,
-a {
+a,
+button {
     font-family: 'Roboto', sans-serif;
+    color: #cecbcb;
 }
 
 
 /******* Video  *******/
+
+
+/* 
+body {
+    background: #000;
+}
+*/
 
 .video {
     background: #000;
     position: absolute;
     width: 100vw;
     height: 100vh;
+    z-index: -100;
 }
 
 .flexible {
@@ -172,15 +182,45 @@ a {
 }
 
 
+/*Добавил так как не мог нормально поместить лого/навбар/заголовок/кнопку*/
+
+
+/*
+.container {
+    width: 100vw;
+}
+
+header {
+    position: absolute;
+    margin-top: -100vh;
+}
+
+.callToAction {
+    position: absolute;
+    margin-top: -70vh;
+}
+*/
+
+
 /******* Logo *******/
+
+.flexHeader {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
 .logo img {
     margin: 10px;
 }
 
+.contacts {
+    width: 200px;
+}
+
 .contacts ul {
-    float: right;
-    margin-top: 20px;
+    text-align: center;
+    padding-top: 25px;
 }
 
 .contacts li {
@@ -188,7 +228,6 @@ a {
 }
 
 .contacts a {
-    color: #cecbcb;
     font-weight: 300;
     font-size: 18px;
     text-decoration: none;
@@ -196,6 +235,108 @@ a {
 
 
 /******* Navigation *******/
+
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+.nav.navbar-nav li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #000;
+    background-color: rgba(255, 96, 96, 0.4);
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #848383;
+    background-color: transparent;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.hero-fixed-padding {
+    margin-bottom: 70px;
+}
+
+
+/******* Call to Action ******/
+
+.callToAction h1 {
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 76px;
+    color: #fff;
+    margin-bottom: 12vh;
+}
+
+.callToAction button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 0;
+    color: yellow;
+    background: red;
+    font-weight: 500;
+    transition: color 0.3s;
+    transition: background 0.3s;
+    box-shadow: 0 0 20px #000;
+}
+
+.callToAction button:hover {
+    color: red;
+    background: yellow;
+    transition: color 0.3s;
+    transition: background 0.3s;
+}
+
+
+/******* Articles ******/
+
+.articles {
+    background: #000;
+}
+
+.articles h2 {
+    text-align: center;
+}
+
+.articles p {
+    padding-bottom: 10px;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.articles img {
+    padding-top: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 30px;
+}
 
 
 /******* Footer *******/
